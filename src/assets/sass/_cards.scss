@@ -1,0 +1,208 @@
+/*
+    Year's cards style
+*/
+#cards {
+  .card-group {
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: 15px;
+    .list-group {
+      position: relative;
+      p {
+        margin: 0;
+      }
+      .left-col {
+        padding: 0 0 0 15px;
+      }
+      .right-col {
+        padding: 0 5px 0 0;
+      }
+      .active {
+          background-color: #fff;
+          border: 1px solid rgba(0,0,0,.125);
+          color: #495057;
+          padding-top: .3rem;
+          padding-bottom: .3rem;
+          .cr-amount {
+            font-size: 11px;
+            color: #cccccc;
+          }
+          &::before {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width:7px;
+            height:100%;
+            content: " ";
+            background-color: #82c232;
+            border:1px solid #82c232;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }//::before
+      }//active
+      .add-next {
+        padding-left: 48px;
+        padding-top: .3rem;
+        padding-bottom: .3rem;
+          &::before {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width:35px;
+            height:100%;
+            content: "+";
+            font-size: 30px;
+            font-weight: 400;
+            color: $white;
+            background-color: #29afdf;
+            border:1px solid #29afdf;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            display: flex;
+            align-items: center;
+            padding: 0 7px;
+
+        }//::before
+        .my-subject {
+          color: #0e89b5;
+        }
+        .cr-amount {
+          color: #838a90;
+        }
+      }//add-next
+      .list-group-item {
+        margin-bottom: 5px;
+        border-radius: 5px;
+        .my-subject {
+          text-transform: capitalize;
+        }
+        .cr-amount {
+          font-size: 11px;
+        }
+        .my-code {
+          text-transform: uppercase;
+          font-size: 11px;
+          span {
+            text-transform: none!important;
+            font-size: 11px;
+            color: #cccccc;
+          }
+        }//my-code
+        .tooltip-sign {
+          border:1px solid #067aae;
+          border-radius: 50%;
+          background-color: #ff436b;
+          color: $white;
+          padding:0 6px;
+          font-size: 11px;
+        }
+
+      }//.list-group-item
+    }//.list-group
+
+    .disabled {
+      color: #cccccc;
+      border: 1px dashed #d6d6d8;
+      cursor: default;
+    }
+    .card-footer {
+      background-color: #29afdf;
+      padding: 1rem 1.25rem;
+      button {
+        background-color: #067aae;
+        font-size: 1rem!important;
+        color: $white;
+        border: 1px solid #29afdf;
+        border-radius: 5px;
+        box-shadow: 0 0 0 1px #067aae;
+        transition: all 1s ease;
+        &:hover {
+          background-color: transparent;
+          border: 1px solid #067aae;
+        }
+
+      }
+    }//card-footer
+
+    .card {
+      //margin-right: 15px;
+      .card-title {
+        background-color: #f1f1f2;
+        padding: 20px 10px 10px 10px;
+        margin-bottom: 0;
+        h6, p {
+          text-transform: none!important;
+          margin-bottom: 0;
+        }
+      }//card-title
+      .card-body {
+        padding: 10px 10px 1.25rem 10px;
+      }//card-body
+      .current-card {
+        position: relative;
+      }
+    }//card
+
+    .non-active {
+      border: 0!important;
+      background-color: transparent!important;
+      .card-title {
+        background-color: transparent!important;
+        padding: 20px 10px 10px 15px;
+      }
+      .card-body {
+        padding: 10px 10px 1.25rem 15px;
+      }//card-body
+      .last-col {
+        padding-right:0!important;
+      }
+
+    }
+
+  }//card-group
+
+
+}//cards
+//popover style should be global
+.popover {
+
+    box-shadow: 1px 4px 4px 1px #2d2d2d21;
+    border:rgba(0,0,0,.125);
+  .popover-header {
+    background-color: $white;
+    font-size: 13px;
+    color: #5a5a5a;
+    font-weight: 400;
+    text-align: left;
+    padding: .75rem 1.25rem;
+    border-radius: 5px;
+    border-bottom: 0;
+    p {
+      margin-bottom: 5px;
+      text-transform: none;
+    }
+    button {
+      color: #0e89b5;
+      background-color: transparent;
+      border: 0;
+      cursor: pointer;
+      padding: 0;
+    }
+  }//popover-header
+  .popover-body {
+    padding: 0!important;
+  }
+  
+      &::before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width:7px;
+        height:100%;
+        content: " ";
+        background-color: #ff436b;
+        border:1px solid #ff436b;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }//::before
+}//.popover

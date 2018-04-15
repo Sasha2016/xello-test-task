@@ -1,0 +1,62 @@
+@include media-breakpoint-up(xl) {
+  .popover {
+     top: -5px!important;
+     left: 10px!important;
+     right: 10px!important;
+     transform: none!important;
+   }
+   .arrow {
+     left: 88%!important;
+   }
+ }
+ @include media-breakpoint-only(lg) {
+   .popover {
+      top: -20px!important;
+      left: 10px!important;
+      right: 10px!important;
+      transform: none!important;
+    }
+    .arrow {
+      left: 85%!important;
+    }
+ }
+ @include media-breakpoint-only(md) {
+   .popover {
+      top: -20px!important;
+      left: 10px!important;
+      right: 10px!important;
+      transform: none!important;
+    }
+    .arrow {
+      left: 80%!important;
+    }
+ }
+
+@include media-breakpoint-down(md) {
+    .MyHeader {
+      padding-bottom: 15px;
+    }
+    .progress {
+      margin-left:-15px!important;
+      width: 85%!important;
+    }
+    #first-col {
+      border-left: 0!important;
+      padding-left: 0!important;
+    }
+}
+@include media-breakpoint-down(sm) {
+  body {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .for-small {
+    padding-left: 0!important;
+  }
+  .for-small-checkbox {
+    padding-left: 10px!important;
+  }
+  .arrow {
+    left: 79%!important;
+  }
+}
